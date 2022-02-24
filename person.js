@@ -16,4 +16,17 @@ class Person {
     return   `${this.firstName} ${this.lastName}`;
   }
 
+  sayMyName() {
+    window.alert(this.fullName);
+  }
+
+  getCodeName() {
+    const isATestingGod = confirm('Are you a testing god?');
+
+    if(isATestingGod) {
+      return 'TESTING GOD!';
+    }
+    return 'NOT A GOD';
+  }
+
 }
